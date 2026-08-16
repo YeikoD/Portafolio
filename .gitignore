@@ -28,11 +28,11 @@ ENV/
 *.sublime-workspace
 
 # Archivos grandes (opcional - comentar si quieres incluirlos)
-assets/videos/*.mp4
-assets/videos/*.avi
-assets/videos/*.mov
-assets/screenshots/*.png
-assets/screenshots/*.jpg
+# assets/videos/*.mp4
+# assets/videos/*.avi
+# assets/videos/*.mov
+# assets/screenshots/*.png
+# assets/screenshots/*.jpg
 
 # Si prefieres incluir versiones optimizadas:
 # !assets/videos/*.webm

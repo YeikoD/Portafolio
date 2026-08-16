@@ -112,12 +112,57 @@
             <!-- Demo Video Section -->
             <div class="demo-section" aria-labelledby="demo-title">
                 <h3 id="demo-title"><i class="fas fa-play-circle" aria-hidden="true"></i> Demo del Sistema</h3>
-                <div class="video-placeholder" role="img" aria-label="Video demostrativo del sistema">
-                    <div class="video-content">
-                        <i class="fas fa-video" aria-hidden="true"></i>
-                        <p>Video demostrativo (15-30 segundos)</p>
-                        <p class="video-hint">Muestra velocidad de búsqueda y funcionalidades principales</p>
+                <div class="video-wrapper">
+                    <video controls preload="metadata" poster="assets/screenshots/captura_logsys.png" aria-label="Video demostrativo de LogSys">
+                        <source src="assets/videos/logsys_demo.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Proyecto DALTON Visualizer -->
+            <article class="project" aria-labelledby="project-2-title">
+                <div class="project-image">
+                    <img src="assets/screenshots/captura_dalton_visualizer.png" alt="Captura de interfaz del simulador DALTON Visualizer" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3 id="project-2-title">DALTON Visualizer</h3>
+                    <p class="project-description">
+                        Simulador 3D interactivo en Unity para visualizar, instanciar y combinar elementos químicos según modelos atómicos históricos y compuestos reales.
+                    </p>
+                    <div class="tech-specs" aria-label="Tecnologías utilizadas">
+                        <span class="tech-item"><i class="fab fa-unity" aria-hidden="true"></i> Unity</span>
+                        <span class="tech-item"><i class="fas fa-code" aria-hidden="true"></i> C#</span>
+                        <span class="tech-item"><i class="fas fa-flask" aria-hidden="true"></i> Química</span>
                     </div>
+                    <div class="project-features">
+                        <ul aria-label="Características principales">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Instanciación de átomos (H, C, O, Cu, Zn, Au, Hg...)</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Generación de compuestos con masa total y fórmula</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Panel informativo con teoría y clasificación de Dalton</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Registro de eventos en tiempo real (Log)</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Cámara 3D libre con zoom, rotación y desplazamiento</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/YeikoD/Proyecto-Dalton/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Descargar instalador de DALTON Visualizer">
+                            <i class="fas fa-download" aria-hidden="true"></i> Descargar instalador
+                        </a>
+                        <a href="https://github.com/YeikoD/Proyecto-Dalton" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Ver código en GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i> Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Demo DALTON -->
+            <div class="demo-section" aria-labelledby="demo-dalton-title">
+                <h3 id="demo-dalton-title"><i class="fas fa-play-circle" aria-hidden="true"></i> Demo del Simulador</h3>
+                <div class="video-wrapper">
+                    <video controls preload="metadata" poster="assets/screenshots/captura_dalton_visualizer.png" aria-label="Video demostrativo de DALTON Visualizer">
+                        <source src="assets/videos/dalton_visualizer_demo.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
                 </div>
             </div>
         </div>
