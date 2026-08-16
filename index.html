@@ -3,93 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anderson Correa</title>
+    <meta name="description" content="Portafolio de Anderson Correa - Desarrollador especializado en sistemas de gestión livianos con Electron, Node.js y SQLite. Optimizado para rendimiento y eficiencia.">
+    <meta name="keywords" content="desarrollador, software, electron, nodejs, sqlite, gestión, inventario, rendimiento, sistemas livianos">
+    <meta name="author" content="Anderson Correa">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/YeikoD">
+    <meta property="og:title" content="Anderson Correa | Desarrollador de Software">
+    <meta property="og:description" content="Desarrollador especializado en sistemas de gestión livianos con Electron, Node.js y SQLite.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/000000/E8E6E6?text=Anderson+Correa">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/YeikoD">
+    <meta property="twitter:title" content="Anderson Correa | Desarrollador de Software">
+    <meta property="twitter:description" content="Desarrollador especializado en sistemas de gestión livianos con Electron, Node.js y SQLite.">
+    <meta property="twitter:image" content="https://via.placeholder.com/1200x630/000000/E8E6E6?text=Anderson+Correa">
+    
+    <title>Anderson Correa | Desarrollador de Software</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://github.com">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <nav class="nav">
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Navegación principal">
             <div class="logo">
                 <h1>Anderson Correa</h1>
             </div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#inicio" role="menuitem" aria-current="page">Inicio</a></li>
+                <li role="none"><a href="#proyectos" role="menuitem">Proyectos</a></li>
+                <li role="none"><a href="#contacto" role="menuitem">Contacto</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-links">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero">
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
         <div class="hero-content">
-            <h2>Desarrollador con enfoque en creación de sistemas de gestión livianos, interfaces de usuario intuitivas y automatización de procesos.</h2>
+            <h2 id="hero-title">Desarrollador con enfoque en creación de sistemas de gestión livianos, interfaces de usuario intuitivas y automatización de procesos.</h2>
             <div class="hero-buttons">
-                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-                <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                <a href="#proyectos" class="btn btn-primary" aria-label="Ver mis proyectos destacados">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-secondary" aria-label="Contactar conmigo">Contactar</a>
             </div>
         </div>
-        <div class="hero-scroll">
-            <i class="fas fa-chevron-down"></i>
+        <div class="hero-scroll" aria-hidden="true">
+            <i class="fas fa-chevron-down" aria-label="Scroll hacia abajo"></i>
         </div>
     </section>
 
     <!-- Proyectos Section -->
-    <section id="proyectos" class="projects">
+    <section id="proyectos" class="projects" aria-labelledby="projects-title">
         <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
+            <h2 id="projects-title" class="section-title">Proyectos Destacados</h2>
             
             <!-- Proyecto Estrella -->
-            <div class="project featured">
+            <article class="project featured" aria-labelledby="project-1-title">
                 <div class="project-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-desktop"></i>
-                        <p>Captura de interfaz del sistema</p>
-                    </div>
+                    <img src="assets/screenshots/captura_logsys.png" alt="Captura de interfaz de LogSys" loading="lazy">
                 </div>
                 <div class="project-content">
                     <span class="project-badge">Proyecto Estrella</span>
-                    <h3>Gestor de Inventario y Personal</h3>
+                    <h3 id="project-1-title">LogSys — Gestión de Inventario y Personal</h3>
                     <p class="project-description">
-                        Sistema de gestión empresarial ligero para control de inventario y personal, optimizado para equipos de bajos recursos.
+                        Sistema empresarial ligero para la gestión de inventario y personal, diseñado para funcionar eficientemente en equipos con recursos limitados.
                     </p>
-                    <div class="tech-specs">
-                        <span class="tech-item"><i class="fas fa-atom"></i> Electron</span>
-                        <span class="tech-item"><i class="fas fa-database"></i> SQLite</span>
-                        <span class="tech-item"><i class="fab fa-node-js"></i> Node.js</span>
+                    <div class="tech-specs" aria-label="Tecnologías utilizadas">
+                        <span class="tech-item"><i class="fab fa-microsoft" aria-hidden="true"></i> ASP.NET Core</span>
+                        <span class="tech-item"><i class="fab fa-react" aria-hidden="true"></i> React</span>
+                        <span class="tech-item"><i class="fab fa-rust" aria-hidden="true"></i> Tauri 2</span>
+                        <span class="tech-item"><i class="fas fa-database" aria-hidden="true"></i> SQLite</span>
                     </div>
                     <div class="project-features">
-                        <ul>
-                            <li><i class="fas fa-check"></i> Búsqueda instantánea por cédula</li>
-                            <li><i class="fas fa-check"></i> Consumo mínimo de RAM</li>
-                            <li><i class="fas fa-check"></i> Exportación de planillas</li>
-                            <li><i class="fas fa-check"></i> Interfaz táctica y limpia</li>
+                        <ul aria-label="Características principales">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Control de stock con trazabilidad de movimientos</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Gestión de personal por cargos y departamentos</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Autenticación JWT con roles y permisos</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Instalador Windows autocontenido (sin .NET ni Node)</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Reportes y exportación a Excel y PDF</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Dashboard con gráficos de evolución y stock</li>
                         </ul>
                     </div>
                     <div class="project-actions">
-                        <a href="#" class="btn btn-primary">
-                            <i class="fas fa-download"></i> Descargar .exe
+                        <a href="#" class="btn btn-primary" aria-label="Descargar instalador de LogSys">
+                            <i class="fas fa-download" aria-hidden="true"></i> Descargar instalador
                         </a>
-                        <a href="#" class="btn btn-secondary">
-                            <i class="fab fa-github"></i> Ver en GitHub
+                        <a href="https://github.com/YeikoD/LogiSys" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Ver código en GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i> Ver en GitHub
                         </a>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Demo Video Section -->
-            <div class="demo-section">
-                <h3><i class="fas fa-play-circle"></i> Demo del Sistema</h3>
-                <div class="video-placeholder">
+            <div class="demo-section" aria-labelledby="demo-title">
+                <h3 id="demo-title"><i class="fas fa-play-circle" aria-hidden="true"></i> Demo del Sistema</h3>
+                <div class="video-placeholder" role="img" aria-label="Video demostrativo del sistema">
                     <div class="video-content">
-                        <i class="fas fa-video"></i>
+                        <i class="fas fa-video" aria-hidden="true"></i>
                         <p>Video demostrativo (15-30 segundos)</p>
                         <p class="video-hint">Muestra velocidad de búsqueda y funcionalidades principales</p>
                     </div>
@@ -99,12 +124,12 @@
     </section>
 
     <!-- Contacto Section -->
-    <section id="contacto" class="contact">
+    <section id="contacto" class="contact" aria-labelledby="contact-title">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
+            <h2 id="contact-title" class="section-title">Contacto</h2>
             <div class="contact-links">
-                <a href="https://github.com/YeikoD" target="_blank" class="contact-card contact-card-centered">
-                    <i class="fab fa-github"></i>
+                <a href="https://github.com/YeikoD" target="_blank" rel="noopener noreferrer" class="contact-card contact-card-centered" aria-label="Visitar perfil de GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
                     <h3>GitHub</h3>
                     <p>Ver mis repositorios</p>
                 </a>
@@ -113,12 +138,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <p>&copy; 2024 Anderson Dario Correa Silva. Powered By Yeiko.</p>
+            <p class="footer-performance">
+                <i class="fas fa-bolt" aria-hidden="true"></i> Optimizado para rendimiento
+            </p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
