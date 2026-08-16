@@ -1,0 +1,49 @@
+# Archivos temporales y de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Archivos de logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencias de Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos grandes (opcional - comentar si quieres incluirlos)
+assets/videos/*.mp4
+assets/videos/*.avi
+assets/videos/*.mov
+assets/screenshots/*.png
+assets/screenshots/*.jpg
+
+# Si prefieres incluir versiones optimizadas:
+# !assets/videos/*.webm
+# !assets/screenshots/*-optimized.jpg
+
+# Archivos de configuración local
+.env
+.env.local
+config.local.*
+
+# Build outputs
+dist/
+build/
+out/
